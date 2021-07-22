@@ -1,0 +1,167 @@
+$nav-bar-bg: #39b565;
+$banner-bg: #65bd44;
+$copyright-bg: #f2f2f2;
+$footer-bg: #fafafa;
+$font-regular: #4a4a4a;
+$font-light: #a4a4a4;
+$button-submit: #ff6200;
+$back-to-top: #6d6d6d;
+$mobile: 992px;
+$regular-font-size: 16px;
+$checkbox-size: 25px;
+#app {
+  font-family: "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+#nav {
+  background-color: $nav-bar-bg;
+  padding: 20px;
+
+  p {
+    font-size: $regular-font-size + 8px;
+    margin: 0;
+  }
+
+  a {
+    font-weight: light;
+    color: white;
+    text-decoration: none;
+    &.router-link-exact-active {
+      color: white;
+    }
+  }
+}
+
+#home-body {
+  .font-bold {
+    color: $font-regular;
+    font-weight: bold;
+  }
+
+  .font-step {
+    color: $nav-bar-bg;
+  }
+
+  .step-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      @media (max-width: $mobile) {
+        transform: rotate(90deg);
+        padding: 1rem;
+      }
+    }
+  }
+
+  .btn-primary {
+    @media (max-width: $mobile) {
+      width: 100%;
+      font-size: 18px;
+    }
+    background-color: $button-submit;
+    border: none;
+    &:hover {
+      background-color: $nav-bar-bg;
+    }
+  }
+}
+
+#service-body {
+  .font-bold {
+    color: $font-regular;
+    font-weight: bold;
+  }
+
+  .btn-primary {
+    background-color: $button-submit;
+    border: none;
+    &:hover {
+      background-color: $nav-bar-bg;
+    }
+  }
+
+  .btn-outline-primary {
+    color: $nav-bar-bg;
+    border-color: $nav-bar-bg;
+    &:hover {
+      color: white;
+      background-color: $nav-bar-bg;
+    }
+  }
+
+  .reCaptcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .error-message {
+    font-size: 14px;
+    color: #fd8695;
+  }
+
+  .error-input {
+    border-color: #fd8695;
+  }
+
+  #service-rule {
+    border: solid 1px $font-light;
+    background-color: $footer-bg;
+  }
+
+  .form-check-input {
+    height: $checkbox-size;
+    width: $checkbox-size;
+    margin-right: 1rem;
+    border: solid 1px $nav-bar-bg;
+    border-radius: 0;
+  }
+
+  .form-check-input:checked {
+    background-color: $nav-bar-bg;
+  }
+
+  .form-check-label {
+    @media (max-width: $mobile) {
+      font-size: $regular-font-size - 3px;
+      padding-top: 6px;
+    }
+    padding-top: 4px;
+  }
+}
+
+#footer {
+  background-color: $footer-bg;
+
+  .font-bold {
+    color: $font-regular;
+    font-weight: bold;
+  }
+
+  .font-light {
+    color: $font-light;
+    font-size: $regular-font-size - 2px;
+  }
+
+  .copyright {
+    background-color: $copyright-bg;
+    color: $font-light;
+    font-weight: bold;
+  }
+
+  .description {
+    @media (max-width: $mobile) {
+      text-align: justify;
+    }
+    text-align: left;
+  }
+}
