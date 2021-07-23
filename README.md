@@ -1,24 +1,19 @@
-# cathay-bank-vue
+## 國台世華商業銀行 Vue.js 測試專案
 
-## Project setup
-```
-npm install
-```
+### HeroKu 專案連結
+###### 第一次開啟需要稍等伺服器回應。
+[https://cathay-bank-vue.herokuapp.com/](https://cathay-bank-vue.herokuapp.com/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 專案內容講解
+* 首頁點擊 "**立即購服務登錄**" 或網頁右上方 "**立即購**"，即跳轉至登錄畫面。
+* 使用者輸入身分證後5碼、信用卡號、生日以及驗證碼。
+* 勾選 "**本人已閱讀並同意上述共同行銷條款**"。
+* 確認資料輸入完畢，即可點擊 "**確認送出**"。
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 防呆輸入測試
+| 輸入資料      | 欄位限制字數  | 字元類型    | 格式檢查    |
+| ------------- |:-------------:|:-----------:|:-----------:|
+| 身分證後5碼   | 5             | number      | ✅      |    
+| 信用卡號      | 4             | number      | ✅      |
+| 生日          | 8             | number      | ✅      |  
+| 驗證碼        | -             | text        | ✅      |  
