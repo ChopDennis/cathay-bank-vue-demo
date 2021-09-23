@@ -30,7 +30,7 @@
               v-model="inputId"
               :class="{ 'error-input': inputIdError }"
               placeholder="請輸入身分證後5碼"
-              pattern="\d*" 
+              pattern="\d*"
               maxlength="5"
             />
             <p class="error-message">{{ inputIdErrMsg }}</p>
@@ -50,7 +50,7 @@
                   v-model="cardNumber_1"
                   class="form-control"
                   placeholder="****"
-                  pattern="\d*" 
+                  pattern="\d*"
                   maxlength="4"
                 />
               </div>
@@ -61,7 +61,7 @@
                   v-model="cardNumber_2"
                   class="form-control"
                   placeholder="****"
-                  pattern="\d*" 
+                  pattern="\d*"
                   maxlength="4"
                 />
               </div>
@@ -72,7 +72,7 @@
                   v-model="cardNumber_3"
                   class="form-control"
                   placeholder="****"
-                  pattern="\d*" 
+                  pattern="\d*"
                   maxlength="4"
                 />
               </div>
@@ -83,7 +83,7 @@
                   v-model="cardNumber_4"
                   class="form-control"
                   placeholder="****"
-                  pattern="\d*" 
+                  pattern="\d*"
                   maxlength="4"
                 />
               </div>
@@ -103,7 +103,7 @@
               class="form-control"
               :class="{ 'error-input': birthError }"
               placeholder="例如：19991010"
-              pattern="\d*" 
+              pattern="\d*"
               maxlength="8"
             />
             <p class="error-message">{{ birthErrMsg }}</p>
@@ -132,7 +132,10 @@
             <p class="error-message">{{ inputCaptchaErrMsg }}</p>
           </div>
           <div class="col-lg-2 col-6">
-            <img class="img-fluid" src="../assets/images/img-validate.jpg" />
+            <img
+              class="img-fluid"
+              src="../assets/images/img-validate.jpg"
+            />
           </div>
           <div class="col-lg-2 col-6 reCaptcha">
             <button
@@ -152,13 +155,19 @@
       </div>
       <!-- 行銷條款 -->
       <div class="container-fluid">
-        <div class="container px-5 pt-3" id="service-rule">
+        <div
+          class="container px-5 pt-3"
+          id="service-rule"
+        >
           <div class="row">
             <div class="col-8">
               <p>共同行銷條款</p>
             </div>
             <div class="col-4 text-end">
-              <img class="img-fluid" src="../assets/images/accordion--pc.png" />
+              <img
+                class="img-fluid"
+                src="../assets/images/accordion--pc.png"
+              />
             </div>
           </div>
         </div>
@@ -173,7 +182,10 @@
               v-model="checkRule"
               id="serviceCheck"
             />
-            <label class="form-check-label font-bold" for="serviceCheck">
+            <label
+              class="form-check-label font-bold"
+              for="serviceCheck"
+            >
               本人已閱讀並同意上述共同行銷條款。
             </label>
           </div>
